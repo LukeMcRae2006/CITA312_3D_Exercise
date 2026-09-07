@@ -8,6 +8,11 @@ public class CarController : MonoBehaviour
     public float maxCarSpeed;
     [SerializeField] private InputActionReference moveInput, boostInput;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private MeshRenderer carBody;
+    [SerializeField] private Material carTexturedMaterial, carMaterialNotexture;
+
+    public bool ChangeMaterial = false;
+
 
     private float colAmount = 0;
 
@@ -25,6 +30,14 @@ public class CarController : MonoBehaviour
         RegisterInput();
         MoveVehicle();
         Turnvehicle();
+        if (ChangeMaterial)
+        {
+            carBody.material = carTexturedMaterial;
+        }
+        else
+        {
+            carBody.material = carMaterialNotexture;
+        }
     }
 
 

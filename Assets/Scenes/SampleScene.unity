@@ -9156,6 +9156,10 @@ MonoBehaviour:
   moveInput: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   boostInput: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   rb: {fileID: 5949333551854136838}
+  carBody: {fileID: 3234561647480269151}
+  carTexturedMaterial: {fileID: 2100000, guid: f4118394d4c37a941aa6014b5fadbad3, type: 2}
+  carMaterialNotexture: {fileID: 2100000, guid: 2563cb1bbe697024fa9665bc4b2587b7, type: 2}
+  ChangeMaterial: 0
 --- !u!65 &5949333551854136837
 BoxCollider:
   m_ObjectHideFlags: 0
